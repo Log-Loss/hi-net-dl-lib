@@ -57,6 +57,18 @@ the overall parameters of the model
 | lr | learning rate of the model | number [< 1, close to 0] |
 | l2 | l2 regularization of the model | number [< 1]|
 
+#### LSTM Layer
+
+**the lstm layer is different from other layers and return config directly**  
+    
+**required parameters**   
+
+| parameters | description | format |  
+| ---------- | :-------: | ----: |  
+| hiddenLayerWidth | the units in one hidden layer | number [>= 1] |
+| hiddenLayerCount | the number of hidden layers | number [>= 1] |
+| sequenceLen | the length of the input sequence | number [> 0] |
+
 
 #### Other required parameters
 
