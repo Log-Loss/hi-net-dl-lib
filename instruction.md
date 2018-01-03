@@ -12,6 +12,7 @@ This project converts the parameters of layers and model to the **config** of th
 | kernelSize | the kernel size  | number [eg. 3 for 3x3 >= 1 usually 1,3,5,7]|  
 | strides | the strides applied  | number [eg. 2 for 2x2 >= 1] |  
 | padding |  the padding applied  | number [>= 0] |
+| activation | activation function of the layer  | string [relu, leadyrelu, tanh, sigmoid, none]| 
 
 #### Dense Layer
 **required parameters**   
@@ -47,15 +48,6 @@ This project converts the parameters of layers and model to the **config** of th
 | activation | activation function of the layer | string [softmax, tanh, sigmoid] |
 | lossFunction | loss function of the model | string [neg, sqrt]|
 
-#### Input Layer
-the overall parameters of the model  
-**required parameters**   
-
-| parameters | description | format |  
-| ---------- | :-------: | ----: |  
-| iteration | iteration of the model | number [>= 1]|
-| lr | learning rate of the model | number [< 1, close to 0] |
-| l2 | l2 regularization of the model | number [< 1]|
 
 #### LSTM Layer
 
@@ -68,8 +60,3 @@ the overall parameters of the model
 | hiddenLayerWidth | the units in one hidden layer | number [>= 1] |
 | hiddenLayerCount | the number of hidden layers | number [>= 1] |
 | sequenceLen | the length of the input sequence | number [> 0] |
-
-
-#### Other required parameters
-
-inputType : from the dataset
