@@ -12,7 +12,7 @@ This project converts the parameters of layers and model to the **config** of th
 | kernelSize | the kernel size  | number [eg. 3 for 3x3 >= 1 usually 1,3,5,7]|  
 | strides | the strides applied  | number [eg. 2 for 2x2 >= 1] |  
 | padding |  the padding applied  | number [>= 0] |
-| activation | activation function of the layer  | string [relu, leadyrelu, tanh, sigmoid, none]| 
+| activation | activation function of the layer  | string [relu, leakyrelu, tanh, sigmoid, none]| 
 
 #### Dense Layer
 **required parameters**   
@@ -20,7 +20,7 @@ This project converts the parameters of layers and model to the **config** of th
 | parameters | description | format |  
 | ---------- | :-------: | ----: |  
 | outputDim  | output dimension of the layer | number [> 0] |  
-| activation | activation function of the layer  | string [relu, leadyrelu, tanh, sigmoid]|  
+| activation | activation function of the layer  | string [relu, leakyrelu, tanh, sigmoid]|  
 | weightInit | the weight initialization method  |string [xavier, zero, uniform] |  
 
 #### Pooling Layer
